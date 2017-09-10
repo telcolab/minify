@@ -1,0 +1,35 @@
+{
+    "name": "telcolab/cacher",
+    "description": "A Laravel's package that minifies blade files upon compiling.",
+    "homepage": "https://github.com/telcolab/minify",
+    "keywords": ["laravel", "blade", "minify"],
+    "support": {
+        "issues": "https://github.com/telcolab/minify/issues",
+        "source": "https://github.com/telcolab/minify"
+    },
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Haries Nur Ikhwan",
+            "email": "haries@telcolab.my"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "illuminate/support": "5.0.*|5.1.*|5.2.*|5.3.*|5.4.*|5.5.*",
+        "illuminate/view": "5.0.*|5.1.*|5.2.*|5.3.*|5.4.*|5.5.*",
+    },
+    "autoload": {
+        "psr-4": {
+            "TelcoLAB\\Minify\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TelcoLAB\\Minify\\ServiceProvider"
+            ]
+        }
+    }
+}
