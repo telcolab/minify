@@ -1,5 +1,5 @@
 {
-    "name": "telcolab/cacher",
+    "name": "telcolab/minify",
     "description": "A Laravel's package that minifies blade files upon compiling.",
     "homepage": "https://github.com/telcolab/minify",
     "keywords": ["laravel", "blade", "minify"],
