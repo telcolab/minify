@@ -2,6 +2,7 @@
 
 namespace TelcoLAB\Minify;
 
+use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
 class ServiceProvider extends BaseServiceProvider
@@ -57,7 +58,7 @@ class ServiceProvider extends BaseServiceProvider
 
         Blade::extend(function ($view, $compiler) use ($ignoredPaths) {
             if ($ignoredPaths) {
-                $path = str_replace('\\', '/', $this->getPath());
+                $path = str_replace('\\', '/', $compiler->getPath());
 
                 foreach ($ignoredPaths as $ignoredPath) {
                     if (strpos($path, $ignoredPath) !== false) {
